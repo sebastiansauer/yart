@@ -11,6 +11,11 @@ This package leans on earlier work by [Aaron Wolen](http://aaronwolen.com/) in h
 R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The structure of this package is heavily inspired by Dirk Eddenbuettel's nice tamplate package [linl](https://github.com/eddelbuettel/linl).
 
 
+The following screenshot shows on the left hand side the raw markdown file and on the right hand side the compiled pdf paper.
+
+![](https://sebastiansauer.github.io/yart/yart_template_rstudio.png)
+
+
 ## Installation
 
 Install via R from Github:
@@ -19,6 +24,8 @@ Install via R from Github:
 devtools::install_github("sebastiansauer/yart")
 ```
 
+
+>    LaTeX needs to be installed.
 
 ## Example
 
