@@ -90,10 +90,7 @@ Use this format for citation: "[\@bibtexkey]".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
-malesuada consectetur [@Roberts2007]. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
-dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
-malesuada consectetur [@Mazar2008; @Paulhus2003]. 
+malesuada consectetur.
 
 
 
@@ -140,10 +137,10 @@ xtable(head(mtcars[,1:3]), caption = "Eine krasse Tabelle", label = "tab:Tab2")
 
 # Figures
 
-Use knit to insert images. Figures can be referenced, cf. Figure \ref{fig:fig1}.
+Use knit to insert images. Figures can be referenced, too.
 
 
-```{r fig1, echo = TRUE, fig.cap = "Example of a figure", out.width = "50%"}
+```{r fig1, echo = TRUE, eval = FALSE, fig.cap = "Example of a figure", out.width = "50%"}
 knitr::include_graphics("/docs/picture2.png")
 ```
 
