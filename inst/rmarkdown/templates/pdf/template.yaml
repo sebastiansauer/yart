@@ -1,0 +1,4 @@
+name: Yet Another Report Template for LaTeX based documents (YART)
+description: >
+  A markdown wrapper for the LaTeX Letter report
+create_dir: false

@@ -1,0 +1,84 @@
+---
+title: 'This report: Has a title'
+subtitle: "At least it pretends to"
+author: "Sebastian Sauer"
+date: "13\\. Mai 2016"
+field: Sophism
+graphics: null
+lang: de-De
+lof: yes
+logo: logo.png
+lot: yes
+course: Solutions to All and Nothing
+referee: Prof. Dr. I. Weiss-Ois
+street: Meine Straße 1
+ID: 'Matrikelnummer: 12345679'
+toc: yes
+zipcity: 12345 Hausenhausen
+output: yart::yart
+---
+
+
+# Section Header 1
+
+## Section Header 2
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
+malesuada consectetur. Praesent vel facilisis leo. Sed facilisis
+varius orci, ut aliquam lorem malesuada in. Morbi nec purus at nisi
+fringilla varius non ut dui. Pellentesque bibendum sapien velit. Nulla
+purus justo, congue eget enim a, elementum sollicitudin eros. Cras
+porta augue ligula, vel adipiscing odio ullamcorper eu. In tincidunt
+nisi sit amet tincidunt tincidunt. Maecenas elementum neque eget dolor
+[egestas fringilla](http://example.com):
+
+
+> Nullam eget dapibus quam, sit amet sagittis magna. Nam tincidunt,
+> orci ac imperdiet ultricies, neque metus ultrices quam, id gravida
+> augue lacus ac leo.
+
+Vestibulum id sodales lectus, sed scelerisque quam. Nullam auctor mi
+et feugiat commodo. Duis interdum imperdiet nulla, vitae bibendum eros
+placerat non. Cras ornare, risus in faucibus malesuada, libero sem
+fringilla quam, ut luctus enim sapien eget dolor.
+
+
+- Aufzählungen (nummeriert oder nicht) sind möglich.
+
+- Sonderzeichen werden unterstützt: äüß.
+
+- \LaTeX wird unterstützt.
+
+- Und damit auch "schöne" Formeln: $e^{ln(e)}=e$ (stimmt das?).
+
+- Ein Überblick zur **Markdown-Syntax** findet sich [hier](http://pandoc.org/README.html#pandocs-markdown).
+
+
+
+- Ein paar Gimmicks: H~2~O, This ~~is deleted text.~~, feas*ible*, not feas*able*, lang---ganz lang.
+
+- Fußnoten sind erlaubt[^1].
+
+- Zitationen sind möglich, im beliebigen Format, z.B. APA6. Das Format wird über die Variable `cls` definiert (im Kopfteil oben). Die entsprechende Datei muss im gleichen Ordner liegen wie diese Rmd-Datei. Die Datei mit den bibliographischen Informationen wird über die Variable `bibliography` angegeben. Auch diese Datei muss sich im gleichen Ordner befinden wie diese Rmd-Datei. 
+
+- Besonders schön ist es, dass man [R](https://cran.r-project.org) direkt einbinden kann über [knitr](http://yihui.name/knitr/). [Hier](http://galahad.well.ox.ac.uk/repro/) findet sich eine gute Anleitung.
+
+
+[^1]: Fußnoten sind bei Pandoc eine Art von Links. 
+
+
+# R-Code
+
+So bindet man R-Code ein:
+
+```{r}
+x <- c(1,2,3)
+mean(x)
+```
+
+
+
+
+
