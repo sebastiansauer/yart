@@ -10,12 +10,12 @@ lof: yes
 logo: logo.png
 bibliography: bib.bib
 lot: yes
-course: Solutions to All and Nothing
-referee: Prof. Dr. I. Weiss-Ois
-street: Meine Straße 1
+course: Seminar: Solutions to All and Nothing
+referee: Referee: Prof. Dr. I. Weiss-Ois
+adress: Meine Straße 1, 12345 Hausenhausen
 ID: 'Matrikelnummer: 12345679'
 toc: yes
-zipcity: 12345 Hausenhausen
+zipcity: 
 output: yart::yart
 ---
 

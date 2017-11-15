@@ -8,13 +8,18 @@ graphics: null
 lang: de-De
 lof: yes
 lot: yes
+bibliography: bib.bib
 course: Solutions to All and Nothing
 referee: Prof. Dr. I. Weiss-Ois
-street: Meine Straße 1
+address: Meine Straße 1, 12345 Hausenhausen
 ID: 'Matrikelnummer: 12345679'
 toc: yes
-zipcity: 12345 Hausenhausen
 output: yart::yart
+abstract: |
+  This manuscript demonstrates how to use R Markdown and papaja to
+  create an APA conform manuscript. papaja builds on R Markdown, which
+  uses pandoc to turn Markdown into PDF or Word documents. The conversion
+  to Word documents currently supports only a limited set of features.
 
 vignette: >
   %\VignetteIndexEntry{yart example report}

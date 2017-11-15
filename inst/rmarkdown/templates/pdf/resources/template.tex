@@ -1,9 +1,10 @@
-% LaTeX template for R package ``yart''
+% LaTeX template for academic reports (thesis)
+
 % Sebastian Sauer
 
 
 
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{report}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{article}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
@@ -17,6 +18,7 @@ $endif$
 \usepackage{ifxetex,ifluatex}
 
 
+
 % some more packages...
 \usepackage{graphicx}
 \usepackage{scrpage2}
@@ -27,6 +29,9 @@ $endif$
 
 
 \renewcommand{\baselinestretch}{1.5}  % line distance is 1.5
+
+%\renewcommand{\chaptername}{} %% remove the word \chapter
+
 
 
 \usepackage{fixltx2e} % provides \textsubscript
@@ -208,31 +213,11 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-%$if(title)$
-%\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-%$endif$
-%$if(subtitle)$
-%\providecommand{\subtitle}[1]{}
-%\subtitle{$subtitle$}
-%$endif$
-%$if(author)$
-%\author{$for(author)$$author$$sep$ \and $endfor$}
-%$endif$
-%\date{$date$}
-
 
 
 
 
 \begin{document}  %%%%%%% main document %%%%%%%%%%%%%%%
-%$if(title)$
-%\maketitle
-%$endif$
-%$if(abstract)$
-%\begin{abstract}
-%$abstract$
-%\end{abstract}
-%$endif$
 
 \pagenumbering{Roman} 
 
@@ -241,7 +226,7 @@ $endfor$
     \begin{center}
            \begin{figure}
 			\centering
-			\vspace{2.5cm}
+			%\vspace{1.5cm}
 			$if(logo)$\includegraphics[width=3cm]{$logo$}$endif$
 		\end{figure}
        
@@ -249,28 +234,29 @@ $endfor$
         
        \LARGE{ \textbf{ \uppercase{$title$}}}
         
-       \vspace{0.5cm}
+       %\vspace{0.5cm}
         
        \large{ \uppercase{$subtitle$}}
         
         \vspace{2cm}
  
         $course$\\
-        \vspace{0.5cm}
+        %\vspace{0.5cm}
         \large{$field$}\\ 
               
-        \vspace{2cm}        
+        \vspace{1cm}        
          
         \textbf{$author$}\\
         $ID$\\
-        $street$\\
-        $zipcity$\\
+        $address$\\
         
-         \vspace{2cm} 
+         \vspace{1cm} 
          $date$\\ 
         
-        \vspace{1cm}
+        $if(referee)$
+        \vspace{.51cm}
          $referee$  
+         $endif$
                    
          \vfill
   
@@ -281,9 +267,16 @@ $endfor$
 \end{titlepage} 
 
 \newpage
-\thispagestyle{empty}
-\mbox{}
+% \thispagestyle{empty}
+% \mbox{}
 
+
+$if(abstract)$
+ \begin{abstract}
+     $abstract$
+ \end{abstract}
+ \newpage
+$endif$
 
 
 
