@@ -114,14 +114,7 @@ So erstellt man "von Hand" eine Tabelle in Markdown
 Table: Table caption
 
 
-Man kann auch den R-Befehl `xtable` nehmen, um sich Tabellen "automatisch" -- und mit vielen Finetuning-Optionen -- erstellen zu lassen (vgl. Tab. \ref{tab:Tab2}). Dem Befehl übergibt man als Parameter den Namen des Dataframes, den man darstellen möchte.
-
-```{r Tab2, echo = FALSE, results = "asis", message = FALSE}
-library(xtable)
-options(xtable.comment = FALSE)
-xtable(head(mtcars[,1:3]), caption = "Eine krasse Tabelle", label = "tab:Tab2")
-
-```
+There are comfortable R packages available for rendering markdown tables such as Huxtable, or xtable, and other.
 
 
 
