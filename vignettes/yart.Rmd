@@ -9,9 +9,9 @@ lang: de-De
 lof: yes
 lot: yes
 bibliography: bib.bib
-course: Solutions to All and Nothing
-referee: Prof. Dr. I. Weiss-Ois
-address: Meine Straße 1, 12345 Hausenhausen
+course: "Seminar: Solutions to All and Nothing"
+referee: "Referee: Prof. Dr. I. Weiss-Ois"
+address: "Meine Straße 1, 12345 Hausenhausen"
 ID: 'Matrikelnummer: 12345679'
 toc: yes
 output: yart::yart
@@ -146,7 +146,7 @@ xtable(head(mtcars[,1:3]), caption = "Eine krasse Tabelle", label = "tab:Tab2")
 
 # Citation
 
-Use this format for citation "[@bibtexkey]".
+Use this format for citation: "[\@bibtexkey]".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
@@ -155,6 +155,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
 malesuada consectetur [@Mazar2008; @Paulhus2003]. 
       
+
+
+# Figures
+
+Use knit to insert images. Figures can be referenced, cf. Figure \ref{fig:fig1}.
+
+
+```{r fig1, echo = TRUE, fig.cap = "Example of a figure", out.width = "50%"}
+knitr::include_graphics("../docs/picture2.png")
+```
+
+
 
 
 \pagebreak

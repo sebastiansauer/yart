@@ -10,12 +10,16 @@ lof: yes
 logo: logo.png
 bibliography: bib.bib
 lot: yes
-course: Seminar: Solutions to All and Nothing
-referee: Referee: Prof. Dr. I. Weiss-Ois
-adress: Meine Straße 1, 12345 Hausenhausen
+course: "Seminar: Solutions to All and Nothing"
+referee: "Referee: Prof. Dr. I. Weiss-Ois"
+address: "Meine Straße 1, 12345 Hausenhausen"
 ID: 'Matrikelnummer: 12345679'
 toc: yes
-zipcity: 
+abstract: |
+  This manuscript demonstrates how to use R Markdown and papaja to
+  create an APA conform manuscript. papaja builds on R Markdown, which
+  uses pandoc to turn Markdown into PDF or Word documents. The conversion
+  to Word documents currently supports only a limited set of features.
 output: yart::yart
 ---
 
@@ -82,7 +86,7 @@ mean(x)
 
 # Citation
 
-Use this format for citation "[@bibtexkey]".
+Use this format for citation: "[\@bibtexkey]".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
@@ -91,6 +95,57 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
 malesuada consectetur [@Mazar2008; @Paulhus2003]. 
 
+
+
+
+# Tabellen
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+
+
+So erstellt man "von Hand" eine Tabelle in Markdown:
+
+
+```
+ Right    Left     Center     Default
+-------    ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+      
+Table: So beschriftet man eine Tabelle am einfachsten
+
+```
+
+Das ist das Ergebnis:
+
+
+  Right    Left     Center     Default
+-------    ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+      
+Table: So beschriftet man eine Tabelle am einfachsten
+
+
+Man kann auch den R-Befehl `xtable` nehmen, um sich Tabellen "automatisch" -- und mit vielen Finetuning-Optionen -- erstellen zu lassen (vgl. Tab. \ref{tab:Tab2}). Dem Befehl übergibt man als Parameter den Namen des Dataframes, den man darstellen möchte.
+
+```{r Tab2, echo = TRUE, results = "asis", message = FALSE}
+library(xtable)
+options(xtable.comment = FALSE)
+xtable(head(mtcars[,1:3]), caption = "Eine krasse Tabelle", label = "tab:Tab2")
+
+```
+
+
+# Figures
+
+Use knit to insert images. Figures can be referenced, cf. Figure \ref{fig:fig1}.
+
+
+```{r fig1, echo = TRUE, fig.cap = "Example of a figure", out.width = "50%"}
+knitr::include_graphics("/docs/picture2.png")
+```
 
 
 
