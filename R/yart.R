@@ -24,6 +24,7 @@
 #'   \item{\code{subtitle}}{Subtitle}
 #'   \item{\code{author}}{Author}
 #'   \item{\code{date}}{Date}
+#'   \item{\code{logo}}{logo (image) file, png format preferred}
 #'   \item{\code{field}}{Field such as "Psychology", "Marketing", "Consumer Contact"}
 #'   \item{\code{lang}}{LaTeX language support, eg., "de-De"}
 #'   \item{\code{lof}}{List of Figures, Boolean: TRUE or FALSE}
