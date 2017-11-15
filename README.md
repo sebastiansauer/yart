@@ -48,10 +48,15 @@ signature, and a few formatting settings.
 
 ## Usage
 
-Open as a Markdown template via RStudio via *File > New File > RMarkdown > From Template > YART*. The template list or Rmarkdown should feature the YART template upon the package installation:
+First, open as a Markdown template via RStudio via *File > New File > RMarkdown > From Template > YART*. The template list or Rmarkdown should feature the YART template upon the package installation:
 
 
 ![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_template_rstudio.png)
+
+
+Second, "knit" to document to pdf:
+
+![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/knit_to_yart.png)
 
 
 or use code such as
@@ -64,6 +69,10 @@ render("my_report.Rmd")
 
 to create a first draft of a new `my_report.Rmd`.    
 
+
+## Demo video
+
+[![Demo video](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/video_thumbnail.png)](https://www.youtube.com/watch?v=pGnOlXur_D4&feature=youtu.be)
 
 ## Related work
 
