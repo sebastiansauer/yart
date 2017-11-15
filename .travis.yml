@@ -1,6 +1,8 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
-sudo: false
-cache: packages
-
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+script:
+- pdflatex -interaction=nonstopmode -halt-on-error *.tex
