@@ -65,6 +65,16 @@ render("my_report.Rmd")
 to create a first draft of a new `my_report.Rmd`.    
 
 
+## Related work
+
+A number of R packages for RMarkdown templates for PDF documents are available including
+
+- [linl](https://github.com/cran/linl)
+- [pinp](http://dirk.eddelbuettel.com/code/pinp.html)
+- [rticles](http://dirk.eddelbuettel.com/code/pinp.html)
+- [tint](https://cran.r-project.org/web/packages/tint/index.html)
+
+
 ## Author
 
 Sebastian Sauer
