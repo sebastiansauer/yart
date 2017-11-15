@@ -13,7 +13,7 @@ R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The
 
 The following screenshot shows on the left hand side the raw markdown file and on the right hand side the compiled pdf paper.
 
-![](https://sebastiansauer.github.io/yart/yart_template_rstudio.png)
+![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_template_rstudio.png)
 
 
 ## Installation
