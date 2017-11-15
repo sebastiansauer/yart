@@ -7,7 +7,6 @@ field: Sophism
 graphics: null
 lang: de-De
 lof: yes
-logo: logo.png
 lot: yes
 course: Solutions to All and Nothing
 referee: Prof. Dr. I. Weiss-Ois
@@ -16,6 +15,13 @@ ID: 'Matrikelnummer: 12345679'
 toc: yes
 zipcity: 12345 Hausenhausen
 output: yart::yart
+
+vignette: >
+  %\VignetteIndexEntry{yart example report}
+  %\VignetteKeywords{yart, vignette}
+  %\VignettePackage{yart}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 
@@ -139,3 +145,5 @@ xtable(head(mtcars[,1:3]), caption = "Eine krasse Tabelle", label = "tab:Tab2")
 
 #Literatur
 
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}

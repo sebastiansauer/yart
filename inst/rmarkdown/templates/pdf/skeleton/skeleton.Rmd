@@ -80,5 +80,11 @@ mean(x)
 
 
 
+# References
+
+<!-- These lines ensure references are set with hanging indents in PDF documents -->
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
 
 

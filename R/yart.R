@@ -1,6 +1,10 @@
 #' LaTeX Report format template YART
 #'
-#' A format suitable for reports such as academic papers (thesis)
+#' \pkg{yart} provides a template suitable for reports such as academic papers (thesis). It can be used with (or without) \href{http://www.rstudio.com/}{RStudio}.
+#'
+#'
+#' #' Note, at this point `yart` is in active development and should be considered alpha. If you experience any problems,
+#' please \href{https://github.com/sebastiansauer/yart/issues}{open an issue} with a reproducible example of the encountered problem.
 #'
 #' @inheritParams rmarkdown::pdf_document
 #' @param ... Additional arguments to \code{rmarkdown::pdf_document}
@@ -14,6 +18,32 @@
 #' rmarkdown::draft("my_report.Rmd", template = "pdf", package = "yart")
 #' rmarkdown::render("my_report.Rmd")
 #' }
+#'
+#' @section System requirements:
+#' To use \pkg{yart} you need to make sure the following software is installed on your computer:
+#'
+#'    \itemize{
+#'        \item{\href{http://www.rstudio.com/}{RStudio} (>= 0.98.932) or if you don't use RStudio
+#'            , you need to install \href{http://johnmacfarlane.net/pandoc/}{pandoc} using the
+#'            \href{https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md}{instructions for your operating system}}
+#'        \item{A \href{http://de.wikipedia.org/wiki/TeX}{TeX} distribution (2013 or later; e.g., \href{http://miktex.org/}{MikTeX}
+#'            for Windows, \href{https://tug.org/mactex/}{MacTeX} for Mac, obviously, or \href{http://www.tug.org/texlive/}{TeX Live}
+#'            for Linux)}
+#'    }
+#'
+#'    \emph{Windows} users should use MikTex if possible. Currently, pandoc and the Windows version of Tex Live
+#'    \href{https://github.com/rstudio/rmarkdown/issues/6}{don't seem to like each other}. Make sure you install the
+#'    \emph{complete}---not the basic---version.
+#'
+#'    \emph{Ubuntu 14.04} users need a few additional TeX packages for the document class
+#'    \href{http://www.ctan.org/pkg/apa6}{apa6} to work:
+#'
+#'    \code{sudo apt-get install texlive texlive-publishers texlive-fonts-extra texlive-latex-extra texlive-humanities lmodern}
+#'
+#' @section Authors:
+#'    Sebastian Sauer (sebastian.sauer at posteo.de)
+#' @section Maintainer:
+#'    Sebastian Sauer (sebastian.sauer at posteo.de)
 #'
 #' @section Report features:
 #' Various aspects of the report can be customized by setting the following
@@ -63,7 +93,14 @@
 #'
 #'
 #'
-lyartinl <- function(..., keep_tex = FALSE) {
+#'
+#' @docType package
+#' @name yart
+
+NULL
+
+
+yart <- function(..., keep_tex = FALSE) {
 
   template <- system.file("rmarkdown", "templates", "pdf", "resources", "template.tex",
                           package = "yart")
