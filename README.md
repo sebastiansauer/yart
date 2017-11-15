@@ -1,8 +1,10 @@
+[![Travis-CI Build Status](https://travis-ci.org/sebastiansauer/yart.svg?branch=master)](https://travis-ci.org/sebastiansauer/yart)
+
 [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Yart: Yet another markdown report template
 
-## Wha is Yart?
+## What is Yart?
 
 It would be useful to have a RMarkdown template for typical (academic) reports such as class assigments and bachelor/master thesises. The LaTeX class "report" provides a suitable format for that. This package provides a simple wrapper around this class built on the standard pandoc template.
 
