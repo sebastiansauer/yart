@@ -13,7 +13,8 @@ R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The
 
 The following screenshot shows on the left hand side the raw markdown file and on the right hand side the compiled pdf paper.
 
-![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_template_rstudio.png)
+![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_screenshot.png)
+
 
 
 ## Installation
@@ -50,8 +51,7 @@ signature, and a few formatting settings.
 Open as a Markdown template via RStudio via *File > New File > RMarkdown > From Template > YART*. The template list or Rmarkdown should feature the YART template upon the package installation:
 
 
-![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_screenshot.png)
-
+![](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/yart_template_rstudio.png)
 
 
 or use code such as
