@@ -81,6 +81,12 @@ to create a first draft of a new `my_report.Rmd`.
 
 [![Demo video](https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/video_thumbnail.png)](https://www.youtube.com/watch?v=pGnOlXur_D4&feature=youtu.be)
 
+
+## Bugs, Feedback, Issues
+
+Please report issues [here](https://github.com/sebastiansauer/yart/issues) along with a reproducible example if possible.
+
+
 ## Related work
 
 A number of R packages for RMarkdown templates for PDF documents are available including
