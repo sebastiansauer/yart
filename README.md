@@ -1,5 +1,3 @@
-[![Travis-CI Build Status](https://travis-ci.org/sebastiansauer/yart.svg?branch=master)](https://travis-ci.org/sebastiansauer/yart)
-
 [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Yart: Yet another markdown report template
