@@ -96,14 +96,11 @@
 #'
 #' @docType package
 #' @name yart
-
-NULL
-
-
+#'
+#' @export
 yart <- function(..., keep_tex = FALSE) {
 
-  template <- system.file("rmarkdown", "templates", "pdf", "resources", "template.tex",
-                          package = "yart")
+  template <- system.file("rmarkdown", "templates", "pdf", "resources", "template.tex", package = "yart")
   base <- inherit_pdf_document(..., template = template, keep_tex = keep_tex)
 
   base$knitr$opts_chunk$prompt <- FALSE 	# changed from TRUE

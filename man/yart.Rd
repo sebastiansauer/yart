@@ -5,6 +5,9 @@
 \alias{yart}
 \alias{yart-package}
 \title{LaTeX Report format template YART}
+\usage{
+yart(..., keep_tex = FALSE)
+}
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::pdf_document}}
 

@@ -1,3 +1,8 @@
+% LaTeX template for R package ``yart''
+% Sebastian Sauer
+
+
+
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{report}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
@@ -19,12 +24,6 @@ $endif$
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor = blue, urlcolor=blue}
 \usepackage{eso-pic}
-
-
-%\usepackage[a4paper,left=40mm,right=20mm, top=3cm, bottom=2cm]{geometry}
-%\usepackage{geometry}
-
-
 
 
 \renewcommand{\baselinestretch}{1.5}  % line distance is 1.5
@@ -262,18 +261,16 @@ $endfor$
               
         \vspace{2cm}        
          
-        vorgelegt von\\        
         \textbf{$author$}\\
         $ID$\\
         $street$\\
         $zipcity$\\
         
          \vspace{2cm} 
-         eingereicht am:\\
          $date$\\ 
         
         \vspace{1cm}
-         Gutachter: $referee$  
+         $referee$  
                    
          \vfill
   

@@ -8,6 +8,7 @@ graphics: null
 lang: de-De
 lof: yes
 logo: logo.png
+bibliography: bib.bib
 lot: yes
 course: Solutions to All and Nothing
 referee: Prof. Dr. I. Weiss-Ois
@@ -77,6 +78,19 @@ So bindet man R-Code ein:
 x <- c(1,2,3)
 mean(x)
 ```
+
+
+# Citation
+
+Use this format for citation "[@bibtexkey]".
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
+malesuada consectetur [@Roberts2007]. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
+malesuada consectetur [@Mazar2008; @Paulhus2003]. 
+
 
 
 
