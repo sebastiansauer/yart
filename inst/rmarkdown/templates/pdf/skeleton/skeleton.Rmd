@@ -11,6 +11,10 @@ lof: yes
 #bibliography: bib.bib
 #csl: apa6.csl
 lot: yes
+#fontsize: 14pt # ???
+#classoption: 8pt  # ???
+numbersections: TRUE
+#fontfamily: lmodern  #  tgtermes
 course: "Seminar: Solutions to All and Nothing"
 referee: "Referee: Prof. Dr. I. Weiss-Ois"
 address: "Meine Straße 1, 12345 Hausenhausen"
@@ -21,11 +25,12 @@ abstract: |
   create an APA conform manuscript. papaja builds on R Markdown, which
   uses pandoc to turn Markdown into PDF or Word documents. The conversion
   to Word documents currently supports only a limited set of features.
-output: yart::yart
+output: 
+  yart::yart
 ---
 
 
-# Section Header 1
+# My Section Header 1
 
 
 Please see the documentation of [RMarkdown](http://rmarkdown.rstudio.com/) for more details on how to write RMarkdown documents.
@@ -34,7 +39,7 @@ Download a testlogo from here: <https://raw.githubusercontent.com/sebastiansauer
 
 
 
-## Section Header 2
+## My Section Header 2
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis

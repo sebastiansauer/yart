@@ -16,6 +16,7 @@ $if(linestretch)$
 $endif$
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
+\usepackage[nottoc]{tocbibind}
 
 
 
@@ -24,7 +25,7 @@ $endif$
 \usepackage{scrpage2}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, linkcolor = blue, urlcolor=blue}
+\hypersetup{colorlinks=true, linkcolor = blue, urlcolor = blue}
 \usepackage{eso-pic}
 
 
@@ -219,52 +220,52 @@ $endfor$
 
 \begin{document}  %%%%%%% main document %%%%%%%%%%%%%%%
 
-\pagenumbering{Roman} 
+\pagenumbering{Roman}
 
 \begin{titlepage}
-    
+
     \begin{center}
            \begin{figure}
 			\centering
 			%\vspace{1.5cm}
 			$if(logo)$\includegraphics[width=3cm]{$logo$}$endif$
 		\end{figure}
-       
+
        \vspace*{1cm}
-        
+
        \LARGE{ \textbf{ \uppercase{$title$}}}
-        
+
        %\vspace{0.5cm}
-        
+
        \large{ \uppercase{$subtitle$}}
-        
+
         \vspace{2cm}
- 
+
         $course$\\
         %\vspace{0.5cm}
-        \large{$field$}\\ 
-              
-        \vspace{1cm}        
-         
+        \large{$field$}\\
+
+        \vspace{1cm}
+
         \textbf{$author$}\\
         $ID$\\
         $address$\\
-        
-         \vspace{1cm} 
-         $date$\\ 
-        
+
+         \vspace{1cm}
+         $date$\\
+
         $if(referee)$
         \vspace{.51cm}
-         $referee$  
+         $referee$
          $endif$
-                   
+
          \vfill
-  
-            
- 
+
+
+
      \end{center}
     \thispagestyle{empty}
-\end{titlepage} 
+\end{titlepage}
 
 \newpage
 % \thispagestyle{empty}
@@ -284,15 +285,7 @@ $for(include-before)$
 $include-before$
 
 $endfor$
-$if(toc)$
-{
-$if(colorlinks)$
-\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-$endif$
-\setcounter{tocdepth}{$toc-depth$}
-\tableofcontents
-}
-$endif$
+
 $if(lot)$
 \newpage
 \listoftables
@@ -302,8 +295,18 @@ $if(lof)$
 \listoffigures
 $endif$
 
+$if(toc)$
+{
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
+
 \newpage
-\pagenumbering{arabic} 
+\pagenumbering{arabic}
 $body$
 
 $if(natbib)$
