@@ -7,24 +7,22 @@ field: Sophism
 graphics: null
 lang: de-De
 lof: yes
+toc: yes
+lot: yes
 #logo: logo.png
 #bibliography: bib.bib
 #csl: apa6.csl
-lot: yes
-#fontsize: 14pt # ???
-#classoption: 8pt  # ???
+fontsize: 11pt 
 numbersections: TRUE
-#fontfamily: lmodern  #  tgtermes
+fontfamily:  lmodern  # tgtermes
 course: "Seminar: Solutions to All and Nothing"
 referee: "Referee: Prof. Dr. I. Weiss-Ois"
-address: "Meine Straße 1, 12345 Hausenhausen"
-ID: 'Matrikelnummer: 12345679'
-toc: yes
+address: "My Road 1, 12345 Somesmalltown"
+ID: 'Immatriculation ID: 12345679'
+
 abstract: |
-  This manuscript demonstrates how to use R Markdown and papaja to
-  create an APA conform manuscript. papaja builds on R Markdown, which
-  uses pandoc to turn Markdown into PDF or Word documents. The conversion
-  to Word documents currently supports only a limited set of features.
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+  
 output: 
   yart::yart
 ---
@@ -104,7 +102,7 @@ mean(x)
 
 # Citation
 
-Put the file with the references in teh same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
+Put the file with the references in the same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
 
 Use this format for citation: "[\@bibtexkey]".
 
@@ -122,6 +120,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 So erstellt man "von Hand" eine Tabelle in Markdown:
 
+---
 
 ```
  Right    Left     Center     Default
@@ -133,6 +132,9 @@ So erstellt man "von Hand" eine Tabelle in Markdown:
 Table: Table caption
 
 ```
+
+---
+
 
 Das ist das Ergebnis:
 

@@ -2,7 +2,23 @@
 
 sudo: required
 dist: trusty
+
+
+
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+
+
+install:
+  - ./run.sh install_aptget r-cran-rmarkdown
+
 script:
-- pdflatex -interaction=nonstopmode -halt-on-error *.tex
+  - ./run.sh run_tests
+
+after_failure:
+  - ./run.sh dump_logs
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

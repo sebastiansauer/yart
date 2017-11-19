@@ -5,3 +5,5 @@
 .DS_Store
 yart.Rproj
 *.mov
+data-raw
+inst/doc

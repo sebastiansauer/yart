@@ -1,33 +1,37 @@
 ---
-title: 'This report: Has a title'
+title: "Vignette for package yart"
 subtitle: "At least it pretends to"
 author: "Sebastian Sauer"
 date: "13\\. Mai 2016"
-field: Bachelor of Science in Sophism
+bibliography: examples/bib.bib
+course: 'Seminar: Solutions to All and Nothing'
+csl: examples/apa6.csl
+address: My Road 1, 12345 Somesmalltown
+field: Sophism
+fontfamily: lmodern
+fontsize: 11pt
 graphics: null
 lang: de-De
 lof: yes
+logo: examples/logo.png
 lot: yes
-#bibliography: bib.bib
-#csl: apa6.csl
-course: "Seminar: Solutions to All and Nothing"
-referee: "Referee: Prof. Dr. I. Weiss-Ois"
-address: "Meine Straße 1, 12345 Hausenhausen"
-ID: 'Matrikelnummer: 12345679'
 toc: yes
-output: yart::yart
-abstract: |
-  This manuscript demonstrates how to use R Markdown and papaja to
-  create an APA conform manuscript. papaja builds on R Markdown, which
-  uses pandoc to turn Markdown into PDF or Word documents. The conversion
-  to Word documents currently supports only a limited set of features.
+numbersections: yes
 
-vignette: >
-  %\VignetteIndexEntry{yart example report}
-  %\VignetteKeywords{yart, vignette}
-  %\VignettePackage{yart}
-  %\VignetteEngine{knitr::rmarkdown}
+abstract: |
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+referee: 'Referee: Prof. Dr. I. Weiss-Ois'
+ID: 'Immatriculation ID: 12345679'
+
+output: 
+  yart::yart
+
+vignette: |
+  %\VignetteIndexEntry{Vignette for package yart}         %\VignetteKeywords{yart, vignette}           
+  %\VignettePackage{yart} 
+  %\VignetteEngine{knitr::rmarkdown} 
   %\VignetteEncoding{UTF-8}
+  \usepackage[utf8]{inputenc}
 ---
 
 
@@ -62,21 +66,17 @@ placerat non. Cras ornare, risus in faucibus malesuada, libero sem
 fringilla quam, ut luctus enim sapien eget dolor.
 
 
-- Aufzählungen (nummeriert oder nicht) sind möglich.
+- bullet lists are possible
 
-- Sonderzeichen werden unterstützt: äüß.
+- \LaTeX is being supported. \LaTeX code can be intermingled.
 
-- \LaTeX wird unterstützt.
+- Math can be included: $e^{ln(e)}=e$ (is that correct???.
 
-- Und damit auch "schöne" Formeln: $e^{ln(e)}=e$ (stimmt das?).
-
-- Ein Überblick zur **Markdown-Syntax** findet sich [hier](http://pandoc.org/README.html#pandocs-markdown).
-
-
+- See [here](http://pandoc.org/README.html#pandocs-markdown) for an overivew on the pandoc's markdwon syntax.
 
 - Ein paar Gimmicks: H~2~O, This ~~is deleted text.~~, feas*ible*, not feas*able*, lang---ganz lang.
 
-- Fußnoten sind erlaubt[^1].
+- Footnotes are supported[^1].
 
 - Zitationen sind möglich, im beliebigen Format, z.B. APA6. Das Format wird über die Variable `cls` definiert (im Kopfteil oben). Die entsprechende Datei muss im gleichen Ordner liegen wie diese Rmd-Datei. Die Datei mit den bibliographischen Informationen wird über die Variable `bibliography` angegeben. Auch diese Datei muss sich im gleichen Ordner befinden wie diese Rmd-Datei. 
 
@@ -120,7 +120,7 @@ There are comfortable R packages available for rendering markdown tables such as
 
 # Citation
 
-Put the file with the references in teh same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
+Put the file with the references in the same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
 
 Use this format for citation: "[\@bibtexkey]".
 
