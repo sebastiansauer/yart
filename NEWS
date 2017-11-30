@@ -5,6 +5,7 @@ Changes:
 
 * Update TeX template to make many YAML variables optional.
 * New yaml variables: "UP_title" and "UP_subtitle" to render the title and the subtitle in UPpercase (or not)
+* quotation marks are rendered using `\usepackage{csquotes}` thus providing support for quotations of different languages
 
 
 

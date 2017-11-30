@@ -42,7 +42,7 @@ Download a testlogo from here: <https://raw.githubusercontent.com/sebastiansauer
 ## My Section Header 2
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+"Lorem ipsum" dolor sit amet, consectetur adipiscing elit. Proin mollis
 dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
 malesuada consectetur. Praesent vel facilisis leo. Sed facilisis
 varius orci, ut aliquam lorem malesuada in. Morbi nec purus at nisi
