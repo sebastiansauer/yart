@@ -7,6 +7,7 @@ Changes:
 * New yaml variables: "UP_title" and "UP_subtitle" to render the title and the subtitle in UPpercase (or not)
 * quotation marks are rendered using `\usepackage{csquotes}` thus providing support for quotations of different languages
 * block quotation can now be changed to a shaded field via the yaml attribute `shaded_quote`
+* line break for long urls in the references
 
 
 
