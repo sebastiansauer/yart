@@ -233,11 +233,11 @@ $endfor$
 
        \vspace*{1cm}
 
-       \LARGE{ \textbf{ $if(title)$ \uppercase{$title$} $else$ Untitled $endif$ }}
+       \LARGE{ \textbf{ $if(title)$ $if(UP_title)$ \uppercase{$title$} $else$ $title$ $endif$ $else$ Untitled $endif$ }}
 
        %\vspace{0.5cm}
 
-       \large{ $if(subtitle)$ \uppercase{$subtitle$} $else$ No Subtitle $endif$ }
+       \large{ $if(subtitle)$ $if(UP_subtitle)$ \uppercase{$subtitle$} $else$ $subtitle$ $endif$ $else$ No Subtitle $endif$ }
 
         \vspace{2cm}
 
