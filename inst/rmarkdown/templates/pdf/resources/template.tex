@@ -214,6 +214,16 @@ $endif$
 
 \usepackage{csquotes}
 
+$if(shaded_quote)$
+  \usepackage{framed}
+  \usepackage{xcolor}
+  \let\oldquote=\quote
+  \let\endoldquote=\endquote
+  \colorlet{shadecolor}{orange!15}
+  \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
+  % thanks to @JLDiaz at this post: https://tex.stackexchange.com/questions/179982/add-a-black-border-to-block-quotations
+$endif$
+
 
 $for(header-includes)$
 $header-includes$
