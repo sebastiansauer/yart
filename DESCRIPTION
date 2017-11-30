@@ -1,7 +1,7 @@
 Package: yart
 Type: Package
 Title: RMarkdown Template for writing PDF reports
-Version: 0.1.1
+Version: 0.1.2
 Author: Sebastian Sauer
 Maintainer: Sebastian Sauer <ssauer@posteo.de>
 Description: This package provides a simple wrapper around the pandoc
