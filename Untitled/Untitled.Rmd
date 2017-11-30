@@ -1,0 +1,173 @@
+---
+title: 'This report: Has a title'
+subtitle: "At least it pretends to"
+author: "Sebastian Sauer"
+date: "13\\. Mai 2016"
+field: Sophism
+graphics: null
+lang: de-De
+lof: yes
+toc: yes
+lot: yes
+#logo: logo.png
+#bibliography: bib.bib
+#csl: apa6.csl
+fontsize: 11pt 
+numbersections: TRUE
+fontfamily:  lmodern  # tgtermes
+# course: "Seminar: Solutions to All and Nothing"
+# referee: "Referee: Prof. Dr. I. Weiss-Ois"
+# address: "My Road 1, 12345 Somesmalltown"
+# ID: 'Immatriculation ID: 12345679'
+
+abstract: |
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+  
+output: 
+  yart::yart
+---
+
+
+# My Section Header 1
+
+
+Please see the documentation of [RMarkdown](http://rmarkdown.rstudio.com/) for more details on how to write RMarkdown documents.
+
+Download a testlogo from here: <https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/logo.png> and uncomment the respective line in the header.
+
+
+
+## My Section Header 2
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
+malesuada consectetur. Praesent vel facilisis leo. Sed facilisis
+varius orci, ut aliquam lorem malesuada in. Morbi nec purus at nisi
+fringilla varius non ut dui. Pellentesque bibendum sapien velit. Nulla
+purus justo, congue eget enim a, elementum sollicitudin eros. Cras
+porta augue ligula, vel adipiscing odio ullamcorper eu. In tincidunt
+nisi sit amet tincidunt tincidunt. Maecenas elementum neque eget dolor
+[egestas fringilla](http://example.com):
+
+
+> Nullam eget dapibus quam, sit amet sagittis magna. Nam tincidunt,
+> orci ac imperdiet ultricies, neque metus ultrices quam, id gravida
+> augue lacus ac leo.
+
+Vestibulum id sodales lectus, sed scelerisque quam. Nullam auctor mi
+et feugiat commodo. Duis interdum imperdiet nulla, vitae bibendum eros
+placerat non. Cras ornare, risus in faucibus malesuada, libero sem
+fringilla quam, ut luctus enim sapien eget dolor.
+
+
+- Aufzählungen (nummeriert oder nicht) sind möglich.
+
+- Sonderzeichen werden unterstützt: äüß.
+
+- \LaTeX wird unterstützt.
+
+- Und damit auch "schöne" Formeln: $e^{ln(e)}=e$ (stimmt das?).
+
+- Ein Überblick zur **Markdown-Syntax** findet sich [hier](http://pandoc.org/README.html#pandocs-markdown).
+
+
+
+- Ein paar Gimmicks: H~2~O, This ~~is deleted text.~~, feas*ible*, not feas*able*, lang---ganz lang.
+
+- Fußnoten sind erlaubt[^1].
+
+- Zitationen sind möglich, im beliebigen Format, z.B. APA6. Das Format wird über die Variable `cls` definiert (im Kopfteil oben). Die entsprechende Datei muss im gleichen Ordner liegen wie diese Rmd-Datei. Die Datei mit den bibliographischen Informationen wird über die Variable `bibliography` angegeben. Auch diese Datei muss sich im gleichen Ordner befinden wie diese Rmd-Datei. 
+
+- Besonders schön ist es, dass man [R](https://cran.r-project.org) direkt einbinden kann über [knitr](http://yihui.name/knitr/). [Hier](http://galahad.well.ox.ac.uk/repro/) findet sich eine gute Anleitung.
+
+
+[^1]: Fußnoten sind bei Pandoc eine Art von Links. 
+
+
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+
+
+
+# R-Code
+
+So bindet man R-Code ein:
+
+```{r}
+x <- c(1,2,3)
+mean(x)
+```
+
+
+# Citation
+
+Put the file with the references in the same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
+
+Use this format for citation: "[\@bibtexkey]".
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+dolor vitae tristique eleifend. Quisque non ipsum sit amet velit
+malesuada consectetur.
+
+
+
+
+# Tabellen
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+
+
+So erstellt man "von Hand" eine Tabelle in Markdown:
+
+---
+
+```
+ Right    Left     Center     Default
+-------    ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+      
+Table: Table caption
+
+```
+
+---
+
+
+Das ist das Ergebnis:
+
+
+  Right    Left     Center     Default
+-------    ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+      
+Table: Table caption
+
+
+There are comfortable R packages available for rendering markdown tables such as Huxtable, or xtable, and other.
+
+# Figures
+
+Use knit to insert images. Figures can be referenced, too.
+
+
+```{r fig1, echo = TRUE, eval = FALSE, fig.cap = "Example of a figure", out.width = "50%"}
+knitr::include_graphics("/docs/picture2.png")
+```
+
+
+
+# References
+
+[If some literature is cited, it appears here]
+
+<!-- These lines ensure references are set with hanging indents in PDF documents -->
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+
+
