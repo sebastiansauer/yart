@@ -2,7 +2,7 @@
 title: "Vignette for package yart"
 subtitle: "At least it pretends to"
 author: "Sebastian Sauer"
-date: "13\\. Mai 2016"
+date: '`r format(Sys.Date(), "%d\\. %m\\. %Y")`'  # today
 bibliography: examples/bib.bib
 course: 'Seminar: Solutions to All and Nothing'
 csl: examples/apa6.csl
@@ -22,7 +22,7 @@ UP_subtitle: yes
 shaded_quote: yes
 
 abstract: |
-  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Adjust those variables to your need. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
 referee: 'Referee: Prof. Dr. I. Weiss-Ois'
 ID: 'Immatriculation ID: 12345679'
 
@@ -120,6 +120,19 @@ Table: Table caption
 There are comfortable R packages available for rendering markdown tables such as Huxtable, or xtable, and other.
 
 
+Table with R package `xtable`; note that this package needs to be installed to run this example.
+
+```{r xtable-example, eval = FALSE}
+data(mtcars)
+
+library(xtable)
+print.xtable(
+  xtable(head(daten), label="tab:daten", caption="Datenstruktur für eine within-Analyse"), 
+  comment=FALSE)
+```
+
+
+
 
 # Citation
 
@@ -148,7 +161,7 @@ plot(mtcars$hp)
 
 #Literatur
 
-[If some literature is cited, it appears here]
+(If some literature is cited, it appears here)
 
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
