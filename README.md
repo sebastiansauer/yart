@@ -29,7 +29,7 @@ The specific addon of this template is that it configurates a LaTeX template sui
 
 Install via R from Github:
 
-```r 
+```r
 # install.packags("devtools", dependencies = TRUE)
 devtools::install(package = "yart",
                   build_vignettes = TRUE)
@@ -37,6 +37,9 @@ devtools::install(package = "yart",
 
 
 >    LaTeX needs to be installed.
+
+
+Use `build_vignettes = TRUE` to build vignettes; der default no vignettes are built by `install_github()`, malheuresement.
 
 ## Example
 
@@ -104,5 +107,5 @@ Sebastian Sauer
 
 ## License
 
-GPL-3 for this package, the work in [pandoc-letter](https://github.com/aaronwolen/pandoc-letter), 
+GPL-3 for this package, the work in [pandoc-letter](https://github.com/aaronwolen/pandoc-letter),
 as well as underlying Pandoc template.

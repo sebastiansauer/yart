@@ -73,11 +73,13 @@ fringilla quam, ut luctus enim sapien eget dolor.
 
 - \LaTeX is being supported. \LaTeX code can be intermingled.
 
-- Math can be included: $e^{ln(e)}=e$ (is that correct???.
+- Math can be included: $e^{ln(e)}=e$ (is that correct???).
 
 - See [here](http://pandoc.org/README.html#pandocs-markdown) for an overivew on the pandoc's markdwon syntax.
 
 - Ein paar Gimmicks: H~2~O, This ~~is deleted text.~~, feas*ible*, not feas*able*, lang---ganz lang.
+
+- Use `\ts` as a shorthand for `\thinspace` to get "z.\ts B." instead of  "z. B." (thin space between the two letters)
 
 - Footnotes are supported[^1].
 
@@ -117,7 +119,7 @@ So erstellt man "von Hand" eine Tabelle in Markdown
 Table: Table caption
 
 
-There are comfortable R packages available for rendering markdown tables such as Huxtable, or xtable, and other.
+There are comfortable and powerful R packages available for rendering markdown tables such as Huxtable, or xtable, and other.
 
 
 Table with R package `xtable`; note that this package needs to be installed to run this example.
