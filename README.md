@@ -36,10 +36,20 @@ devtools::install(package = "yart",
 ```
 
 
->    LaTeX needs to be installed.
 
 
 Use `build_vignettes = TRUE` to build vignettes; der default no vignettes are built by `install_github()`, malheuresement.
+
+## Dependencies
+
+- R (>2.10)
+- RStudio (>1.1)
+- LaTeX
+- packages: rmarkdown and its dependencies
+
+>   Please use the most recent versions of each software.
+
+
 
 ## Example
 
