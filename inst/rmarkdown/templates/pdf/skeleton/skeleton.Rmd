@@ -1,31 +1,38 @@
 ---
-title: 'This report: Has a title'
+# Change the title etc. to your needs:
+title: "Vignette for package yart"
 subtitle: "At least it pretends to"
 author: "Sebastian Sauer"
-date: "13\\. Mai 2016"
+course: 'Seminar: Solutions to All and Nothing'
+address: My Road 1, 12345 Somesmalltown
 field: Sophism
+logo: examples/logo.png
+referee: 'Referee: Prof. Dr. I. Weiss-Ois'
+ID: 'My Immatriculation ID: 12345679'
+
+
+abstract: |
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Adjust those variables to your need. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+  
+
+# Change name of bibliogrphic files:
+bibliography: examples/bib.bib
+csl: examples/apa6.csl  # citation style file
+
+
+# Change only if you know what you are doing:
+date: '`r format(Sys.Date(), "%d\\. %m\\. %Y")`'  # today
+fontfamily: lmodern
+fontsize: 11pt
 graphics: null
 lang: de-De
 lof: yes
-toc: yes
 lot: yes
-#logo: logo.png
-#bibliography: bib.bib
-#csl: apa6.csl
-fontsize: 11pt 
-numbersections: TRUE
-fontfamily:  lmodern  # tgtermes
+toc: yes
+numbersections: yes
 UP_title: yes
 UP_subtitle: yes
-course: "Seminar: Solutions to All and Nothing"
-referee: "Referee: Prof. Dr. I. Weiss-Ois"
-address: "My Road 1, 12345 Somesmalltown"
-ID: 'Immatriculation ID: 12345679'
-shaded_quote: yes
-
-abstract: |
-  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
-  
+shaded_quote: no
 output: 
   yart::yart
 ---
@@ -165,7 +172,9 @@ data(mtcars)
 
 library(xtable)
 print.xtable(
-  xtable(head(daten), label="tab:daten", caption="Datenstruktur für eine within-Analyse"), 
+  xtable(head(daten), 
+         label="tab:daten", 
+         caption="Datenstruktur für eine within-Analyse"), 
   comment=FALSE)
 ```
 
