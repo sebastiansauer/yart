@@ -31,21 +31,20 @@ Install via R from Github:
 
 ```r
 # install.packags("devtools", dependencies = TRUE)
-devtools::install_github("sebastiansauer/yart",
-                         build_vignettes = TRUE)
+devtools::install_github("sebastiansauer/yart")
 ```
 
 
 
-
-Use `build_vignettes = TRUE` to build vignettes; der default no vignettes are built by `install_github()`, malheuresement.
+Be careful with `build_vignettes = TRUE` as it may provoke errors. To build vignettes, I recommend the R function `vdevtools::build_vignettes()`. Per default, no vignettes are built by `install_github()`, malheuresement.
 
 ## Dependencies
 
-- R (>2.10)
-- RStudio (>1.1)
+- R 
+- RStudio 
 - LaTeX
 - packages: rmarkdown and its dependencies
+
 
 >   Please use the most recent versions of each software.
 
