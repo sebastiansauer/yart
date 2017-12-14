@@ -44,6 +44,10 @@ vignette: |
   \usepackage[utf8]{inputenc}
 ---
 
+<!--
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteIndexEntry{Supplementary Materials}
+-->
 
 # Section Header 1
 
