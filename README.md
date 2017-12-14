@@ -31,8 +31,8 @@ Install via R from Github:
 
 ```r
 # install.packags("devtools", dependencies = TRUE)
-devtools::install(package = "yart",
-                  build_vignettes = TRUE)
+devtools::install_github("sebastiansauer/yart",
+                         build_vignettes = TRUE)
 ```
 
 

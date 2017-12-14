@@ -1,10 +1,11 @@
 Package: yart
 Type: Package
-Title: RMarkdown Template for writing PDF reports
+Title: RMarkdown Template for Writing PDF Reports
 Version: 0.1.3
-Author: Sebastian Sauer
-Maintainer: Sebastian Sauer <ssauer@posteo.de>
-Description: This package provides a simple wrapper around the pandoc
+Authors@R: person("Sebastian", "Sauer", email = "ssauer@posteo.de",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-1515-8348"))
+Description: A simple wrapper around the pandoc
     template for LaTeX based pdf documents. A number of variables are 
     provided for convenience such as title, author, course name, 
     supervisor name, adress, and more.
@@ -22,6 +23,5 @@ Imports:
   knitr (>= 1.10.5),
   yaml
 Suggests:
-    xtable,
-    knitr,
-    rmarkdown
+    xtable
+
