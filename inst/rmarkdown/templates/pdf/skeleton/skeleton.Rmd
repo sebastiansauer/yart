@@ -15,9 +15,9 @@ abstract: |
   Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Adjust those variables to your need. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
   
 
-# Change name of bibliogrphic files:
-bibliography: examples/bib.bib
-csl: examples/apa6.csl  # citation style file
+# Insert/Change name of bibliogrphic files:
+#bibliography: examples/bib.bib
+#csl: examples/apa6.csl  # citation style file
 
 
 # Change only if you know what you are doing:
