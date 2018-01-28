@@ -36,7 +36,7 @@ devtools::install_github("sebastiansauer/yart")
 
 
 
-Be careful with `build_vignettes = TRUE` as it may provoke errors. To build vignettes, I recommend the R function `vdevtools::build_vignettes()`. Per default, no vignettes are built by `install_github()`, malheuresement.
+Be careful with `build_vignettes = TRUE` as it may provoke errors. To build vignettes, I recommend the R function `devtools::build_vignettes()`. Per default, no vignettes are built by `install_github()`, malheuresement.
 
 ## Dependencies
 
