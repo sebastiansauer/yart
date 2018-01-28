@@ -9,7 +9,7 @@ It would be useful to have a RMarkdown template for typical (academic) reports s
 
 This package leans on earlier work by [Aaron Wolen](http://aaronwolen.com/) in his
 [pandoc-letter](https://github.com/aaronwolen/pandoc-letter) repository, and extends it for use from
-R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The structure of this package is heavily inspired by Dirk Eddenbuettel's nice tamplate package [linl](https://github.com/eddelbuettel/linl).
+R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The structure of this package is heavily inspired by Dirk Eddelbuettel's nice tamplate package [linl](https://github.com/eddelbuettel/linl).
 
 
 The following screenshot shows on the left hand side the raw markdown file and on the right hand side the compiled pdf paper.
