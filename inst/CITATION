@@ -3,7 +3,7 @@ utils::citEntry(
   , "Sauer, S. (2017). yart: A RMarkdown Template for writing PDF reports, R package version 0.1.0, retrieved from https://github.com/sebastiansauer/yart"
   , author = "Sebastian Sauer"
   , title = "{yart}: A {RMarkdown} Template for writing PDF reports"
-  , year = "2017"
-  , note = "R package version 0.1.0"
+  , year = "2018"
+  , note = "R package version 0.1.4"
   , url = "https://github.com/sebastiansauer/yart"
 )

@@ -6,13 +6,13 @@ author: "Sebastian Sauer"
 course: 'Seminar: Solutions to All and Nothing'
 address: My Road 1, 12345 Somesmalltown
 field: Sophism
-logo: examples/logo.png
+#logo: examples/logo.png  # insert path to your logo
 referee: 'Referee: Prof. Dr. I. Weiss-Ois'
 ID: 'My Immatriculation ID: 12345679'
 
 
 abstract: |
-  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. Adjust those variables to your need. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic.
+  Yart provides an RMarkdown template for rendering TeX based PDFs. It provides a format suitable for academic settings. The typical RMarkdown variables may be used. In additiion, some variabels useful for academic reports have been added such as name of referee, due date, course title, field of study, addres of author, and logo, and a few more maybe. In addition, paper format (eg., paper size, margins) may be adjusted; the babel language set of Latex is supported. Those variables are defined in the yaml header of the yart document. Adjust those variables to your need. Note that citations, figure/ table referencing is possible due to the underlying pandoc magic. This template is not much more than setting some of the variables provided by rmarkdown (pandoc, knitr, latex, and more), credit is due to the original authors. Please reade the rmarkdown documentation for detailled information on how to use rmarkdown and how to change settings.
   
 
 # Insert/Change name of bibliogrphic files:
@@ -20,11 +20,17 @@ abstract: |
 #csl: examples/apa6.csl  # citation style file
 
 
-# Change only if you know what you are doing:
+# Change the following lines only if you know what you are doing:
 date: '`r format(Sys.Date(), "%d\\. %m\\. %Y")`'  # today
 fontfamily: lmodern
 fontsize: 11pt
 graphics: null
+papersize: 
+geometry: margin=1.0in
+classoption:
+  - a4paper
+  - oneside
+  #- more options here, see rmarkdown documentation 
 lang: de-De
 lof: yes
 lot: yes
@@ -38,12 +44,19 @@ output:
 ---
 
 
+
+```{r setup, include=FALSE, echo = FALSE, warning = FALSE, fig.align="center"}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # My Section Header 1
 
 
 Please see the documentation of [RMarkdown](http://rmarkdown.rstudio.com/) for more details on how to write RMarkdown documents.
 
 Download a testlogo from here: <https://raw.githubusercontent.com/sebastiansauer/yart/master/docs/logo.png> and uncomment the respective line in the header.
+
+For finetuning of design options, please check the tex template. There you will find some variables such as `$classoption$`. Those variables may be addressed in the yaml header of the yart file.
 
 
 
@@ -117,7 +130,15 @@ mean(x)
 
 Put the file with the references in the same folder as the rmd-file. Uncomment/insert a line in the yaml header such as `bibliography: bib.bib`, where `bib.bib` is the name of your bib-file. Similarly, if you want to format the citation in a certain style, put the respective csl-file in the same folder as this document and uncomment/insert this line in the yaml header: `csl: apa6.csl`, where `apa6.csl` is the style file.
 
-Use this format for citation: `[\@bibtexkey]`.
+Use this format for citation: `[\@bibtexkey]`. Put all the bibliography data in one bibliography file.
+
+
+Don't forget to cite software and data. R and R packages can be cited in the following way:
+
+```{r eval = FALSE}
+citation()
+citation("rmarkdown")
+```
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
