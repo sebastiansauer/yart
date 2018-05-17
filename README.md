@@ -62,7 +62,8 @@ complete list and default values.
 
 ### Vignette
 
-You can download the vignette [here](https://github.com/sebastiansauer/yart/blob/master/docs/yart.pdf).
+
+You can download the vignette [here](https://github.com/sebastiansauer/yart/blob/master/vignettes/yart.pdf)
 
 
 
