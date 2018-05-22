@@ -22,7 +22,7 @@ abstract: |
 
 # Change only if you know what you are doing:
 date: '`r format(Sys.Date(), "%d\\. %m\\. %Y")`'  # today
-fontfamily: lmodern
+fontfamily: lmodern  # mathpazo is nice too
 fontsize: 11pt
 graphics: null
 lang: de-De

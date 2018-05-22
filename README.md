@@ -5,11 +5,11 @@
 
 ## What is Yart?
 
-It would be useful to have a RMarkdown template for typical (academic) reports such as class assigments and bachelor/master thesises. The LaTeX class "report" provides a suitable format for that. This package provides a simple wrapper around this class built on the standard pandoc template.
+It would be useful to have a RMarkdown template for typical (academic) reports such as class assignments and bachelor/master thesises. The LaTeX class "report" provides a suitable format for that. This package provides a simple wrapper around this class built on the standard pandoc template.
 
 This package leans on earlier work by [Aaron Wolen](http://aaronwolen.com/) in his
 [pandoc-letter](https://github.com/aaronwolen/pandoc-letter) repository, and extends it for use from
-R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The structure of this package is heavily inspired by Dirk Eddelbuettel's nice tamplate package [linl](https://github.com/eddelbuettel/linl).
+R via the [rmarkdown](https://cran.r-project.org/package=rmarkdown) package. The structure of this package is heavily inspired by Dirk Eddelbuettel's nice template package [linl](https://github.com/eddelbuettel/linl).
 
 
 The following screenshot shows on the left hand side the raw markdown file and on the right hand side the compiled pdf paper.
@@ -21,7 +21,7 @@ The following screenshot shows on the left hand side the raw markdown file and o
 
 Being built on Pandoc, yart provides the typical features of Pandoc's Markdown, inculding citation, figures, tables and references thereto -- and basically, via a template, the fully featured LaTeX beauty. Being built on RMarkdown/knitr, R can be knitted into the text document.
 
-The specific addon of this template is that it configurates a LaTeX template suitable for (academic) reports so that the user does not have to deal with the LaTeX pecularities and can focus on writing/contents. There are a number of levers which can be adapted by the used in the yart template including author name, title, subtitle, address, date, referee's name, assignment name, school's name, due date.
+The specific addon of this template is that it configurates a LaTeX template suitable for (academic) reports so that the user does not have to deal with the LaTeX peculiarities and can focus on writing/contents. There are a number of levers which can be adapted by the used in the yart template including author name, title, subtitle, address, date, referee's name, assignment name, school's name, due date.
 
 
 
@@ -40,10 +40,10 @@ Be careful with `build_vignettes = TRUE` as it may provoke errors. To build vign
 
 ## Dependencies
 
-- R 
-- RStudio 
-- LaTeX
-- packages: rmarkdown and its dependencies
+- [R](https://cran.r-project.org/) 
+- [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) 
+- [LaTeX](https://www.latex-project.org/get/)
+- packages: rmarkdown and its dependencies (to be installed via R)
 
 
 >   Please use the most recent versions of each software.
@@ -63,7 +63,7 @@ complete list and default values.
 ### Vignette
 
 
-You can download the vignette [here](https://github.com/sebastiansauer/yart/blob/master/vignettes/yart.pdf)
+You can download the vignette [here](https://github.com/sebastiansauer/yart/raw/master/vignettes/examples/yart.pdf)
 
 
 
