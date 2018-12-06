@@ -1,0 +1,10 @@
+cff-version: 1.0.3
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Sauer
+    given-names: Sebastian
+    orcid: https://orcid.org//0000-0003-1515-8348
+title: YART - Yet another research template
+version: 0.1.0
+doi: 10.5281/zenodo.1996614
+date-released: 2018-12-06
