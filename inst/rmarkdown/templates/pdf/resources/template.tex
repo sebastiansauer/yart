@@ -219,15 +219,46 @@ $endif$
 
 
 
-$if(shaded_quote)$
-  \usepackage{framed}
-  \usepackage{xcolor}
-  \let\oldquote=\quote
-  \let\endoldquote=\endquote
-  \colorlet{shadecolor}{orange!15}
-  \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
-  % thanks to @JLDiaz at this post: https://tex.stackexchange.com/questions/179982/add-a-black-border-to-block-quotations
-$endif$
+
+\makeatletter
+\newenvironment{kframe}{%
+\medskip{}
+\setlength{\fboxsep}{.8em}
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}
+
+
+
+
+
+
+
+
+%
+% $if(shaded_quote)$
+%   \usepackage{framed}
+%   \usepackage{xcolor}
+%   \let\oldquote=\quote
+%   \let\endoldquote=\endquote
+%   \colorlet{shadecolor}{orange!15}
+%   \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
+%   % thanks to @JLDiaz at this post: https://tex.stackexchange.com/questions/179982/add-a-black-border-to-block-quotations
+% $endif$
 
 
 \newcommand{\ts}{\thinspace}

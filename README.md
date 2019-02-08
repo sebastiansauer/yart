@@ -41,7 +41,7 @@ Be careful with `build_vignettes = TRUE` as it may provoke errors. To build vign
 ## Dependencies
 
 - [R](https://cran.r-project.org/) 
-- [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) 
+- [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) (not strictly necessary, but recommended)
 - [LaTeX](https://www.latex-project.org/get/)
 - packages: rmarkdown and its dependencies (to be installed via R)
 
@@ -63,7 +63,7 @@ complete list and default values.
 ### Vignette
 
 
-You can download the vignette [here](https://github.com/sebastiansauer/yart/raw/master/vignettes/examples/yart.pdf)
+You can download the vignette [here](https://github.com/sebastiansauer/yart/raw/master/vignettes/examples/yart.pdf).
 
 
 
