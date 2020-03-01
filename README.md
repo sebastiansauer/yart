@@ -67,7 +67,7 @@ You can download the vignette [here](https://github.com/sebastiansauer/yart/raw/
 
 
 
-## Usage
+## Usage - as a RStudio template
 
 First, open as a Markdown template via RStudio via *File > New File > RMarkdown > From Template > YART*. The template list or Rmarkdown should feature the YART template upon the package installation:
 
@@ -88,7 +88,13 @@ draft("my_report.Rmd", template="pdf", package="yart", edit=FALSE)
 render("my_report.Rmd")
 ```
 
-to create a first draft of a new `my_report.Rmd`.    
+to create a first draft of a new `my_report.Rmd`.   
+
+
+
+## Usage - as a pandoc template
+
+Open the file [yart-via-template.Rmd](./yart-via-template.Rmd), it calls the yart TeX template without reliance of the R package yart. Just adopt the content of this boilerplate file to you need. See [this file](./yart-via-template.pdf) to check the PDF output. 
 
 
 ## Demo video
