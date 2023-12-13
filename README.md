@@ -30,7 +30,7 @@ The specific addon of this template is that it configurates a LaTeX template sui
 Install via R from Github:
 
 ```r
-# install.packags("devtools", dependencies = TRUE)
+# install.packages("devtools", dependencies = TRUE)
 devtools::install_github("sebastiansauer/yart")
 ```
 
